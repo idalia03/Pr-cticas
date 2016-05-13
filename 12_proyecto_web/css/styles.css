@@ -40,12 +40,20 @@
     #contenido{
         
     }
-    
+    /*NOTA IMPORTANTE INICIO*/
     #nota-importante {
-        height: 300px;
+        height: 360px;
         background-color: crimson;
+        margin: 20px 0;
+        /*box-shadow: horizontal vertical blur color*/
+        box-shadow: 0 0 15px darkgray;
         
     }
+#nota-importante img{
+    border: 10px solid white;
+    
+}
+   /*NOTA IMPORTANTE FIN*/
     
     #notas-secundarias{
         height: 300px;
@@ -76,9 +84,15 @@
        height: 50px;
       display: flex;
       justify-content: center;
+      background-color: darkgray;
       
     }
     
+#menu ul{
+    padding: 0;
+}
+
+
 #menu li{
     list-style-type: none;
     padding: 0;
@@ -97,12 +111,13 @@
 #menu>ul>li>a{
     padding: 10px;
     background-color: darkgray;
+     transition: 0.5s;
     
 }
 
 #menu>ul>li>a:hover {
     background-color: lightgray;
-    transition: 0.5s;
+   
     
 }
 
