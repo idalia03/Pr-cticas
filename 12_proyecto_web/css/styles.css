@@ -133,9 +133,10 @@ h1,h2,h3,h4,h5,h6,figure,p {
 
     
     #pie{
-        height: 150px;
+        min-height: 150px;
         clear: both;
-        background-color: cornflowerblue;
+        margin-top: 50px;
+        
         
     }
 
@@ -211,4 +212,83 @@ h1,h2,h3,h4,h5,h6,figure,p {
     justify-content: space-between;
     margin-bottom: 20px;
 }
+#redes-sociales{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.facebook, .twitter{
+    width: 33px;
+    height: 33px;
+    display: inline-block;
+    text-indent: -9999px;
+    transition: 0.2s;
+    
+}
 
+.facebook{
+    background: url('../images/redes-sociales/facebook_twitter.png') 0 0;
+}
+.twitter{
+    background: url('../images/redes-sociales/facebook_twitter.png') -43px 0;
+}
+
+.facebook:hover{
+    background: url('../images/redes-sociales/facebook_twitter.png') 0 -43px;
+}
+.twitter:hover{
+    background: url('../images/redes-sociales/facebook_twitter.png') -43px -43px;
+}
+#politicas{
+    text-align: center;
+    border-top: 3px double lightgray;
+    border-bottom: 3px double lightgray;
+    padding-top: 5px 0;
+    color: darkgray;
+       
+}
+
+#politicas abbr {
+    cursor: help;
+ border-bottom: 1px dotted lightgray;
+}
+
+#logo-sems{
+    background-image: url('../images/pie/sems_footer.png');
+    height: 60px;
+    width: 215px;
+    display: block;
+    text-indent: -9999px;
+    margin: auto;
+    
+}
+
+#separador-sems{
+    margin: 30px 0px;
+    position: relative;
+    
+}
+
+
+
+#logo-sems::before,#logo-sems::after{
+    content: "";
+    border-top: 3px double lightgray;
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 340px;
+    top: 30px;
+}
+
+#logo-sems::before{
+    left: 0px;
+}
+
+#logo-sems::after{
+    right: 0px;  
+}
+#direccion p{
+    text-align: center;
+    color: darkgray;
+    font-size: 0.8em;
+}
